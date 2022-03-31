@@ -13,6 +13,9 @@
 <body>
     <!--cometarios header-->
     <header>
+        <div class="btn_menu">
+            <span>Menu</span>
+        </div>
         <div class="logo">
             <a href="{{ url_for('home') }}">Tecno&seg</a>
         </div>
@@ -22,13 +25,13 @@
                     <a href="{{ url_for('home') }}">Inicio</a>
                 </li>
                 <li>
-                    <a href="">Servicios</a>
+                    <a href="{{ url_for('home') }}">Servicios</a>
                 </li>
                 <li>
-                    <a href="">Contacto</a>
+                    <a href="{{ url_for('home') }}">Contacto</a>
                 </li>
                 <li>
-                    <a href="">Acerca de</a>
+                    <a href="{{ url_for('home') }}">Acerca de</a>
                 </li>
             </ul>
         </nav>
@@ -38,6 +41,17 @@
     <div class="content">
         {% block content %} {% endblock %}
     </div>
+
+    <footer>
+        <div class="footer_content">
+
+        </div>
+        <div class="copyright">
+            <small>
+                Tecno&seg &copy;2022 | All rights reserved
+            </small>
+        </div>
+    </footer>
 
 </body>
 
